@@ -10,7 +10,7 @@
 
 ```yaml
 jobs:
-  githubPrRelease:
+  github-pr-release:
     name: github-pr-release
     runs-on: ubuntu-latest
     steps:
