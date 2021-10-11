@@ -6,5 +6,5 @@ RUN apk --update --no-cache upgrade && \
 
 ADD ./entrypoint.sh /srv/pr-rerelase-action/entrypoint.sh
 WORKDIR /srv/pr-rerelase-action/
-RUN ls -la
-CMD ["./entrypoint.sh"]
+
+ENTRYPOINT ["/srv/pr-rerelase-action/entrypoint.sh"]
