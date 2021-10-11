@@ -5,4 +5,5 @@ RUN apk --update --no-cache upgrade && \
     gem install --no-document git-pr-release
 
 ADD ./entrypoint.sh ./entrypoint.sh
+RUN ls -la
 CMD ["./entrypoint.sh"]
