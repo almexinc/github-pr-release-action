@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/sh
 
 set -eu
 git-pr-release --squashed 2>&1 | tee result.txt
